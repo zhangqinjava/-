@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.alibaba.cloud</groupId>
+    <artifactId>spring-cloud-alibaba-starters</artifactId>
+    <version>2021.1</version>
+  </parent>
+  <groupId>com.alibaba.cloud</groupId>
+  <artifactId>spring-cloud-alibaba-commons</artifactId>
+  <version>2021.1</version>
+  <name>Spring Cloud Alibaba Commons</name>
+  <description>Spring Cloud Alibaba Starters</description>
+  <url>https://github.com/alibaba/spring-cloud-alibaba/spring-cloud-alibaba-starters/spring-cloud-alibaba-commons</url>
+  <organization>
+    <name>Pivotal Software, Inc.</name>
+    <url>https://www.spring.io</url>
+  </organization>
+  <licenses>
+    <license>
+      <name>Apache License, Version 2.0</name>
+      <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <name>xiaojing</name>
+      <email>flystar32@163.com</email>
+    </developer>
+    <developer>
+      <name>Jim Fang</name>
+      <email>fangjian0423@gmail.com</email>
+      <url>https://github.com/fangjian0423</url>
+      <organization>Alibaba</organization>
+    </developer>
+    <developer>
+      <name>xiaolongzuo</name>
+      <email>150349407@qq.com</email>
+    </developer>
+    <developer>
+      <name>hengyunabc</name>
+      <email>hengyunabc@gmail.com</email>
+    </developer>
+    <developer>
+      <id>mercyblitz</id>
+      <name>Mercy Ma</name>
+      <email>mercyblitz@gmail.com</email>
+      <url>https://github.com/mercyblitz</url>
+      <organization>Alibaba</organization>
+    </developer>
+    <developer>
+      <name>yunzheng</name>
+      <email>yunzheng1228@gmail.com</email>
+    </developer>
+    <developer>
+      <id>theonefx</id>
+      <name>theonefx</name>
+      <email>chenxilzx1@gmail.com</email>
+      <url>https://github.com/theonefx</url>
+      <organization>Alibaba</organization>
+    </developer>
+  </developers>
+  <scm>
+    <connection>scm:git:git://github.com/alibaba/spring-cloud-alibaba.git/spring-cloud-alibaba-starters/spring-cloud-alibaba-commons</connection>
+    <developerConnection>scm:git:ssh://git@github.com/alibaba/spring-cloud-alibaba.git/spring-cloud-alibaba-starters/spring-cloud-alibaba-commons</developerConnection>
+    <url>https://github.com/alibaba/spring-cloud-alibaba/spring-cloud-alibaba-starters/spring-cloud-alibaba-commons</url>
+  </scm>
+</project>

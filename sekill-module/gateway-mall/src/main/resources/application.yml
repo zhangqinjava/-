@@ -1,0 +1,80 @@
+spring:
+  application:
+    name: gateway-mall
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.56.100:8848
+    gateway:
+      routes:
+        - id: product_route
+          uri: lb://mall-product
+          predicates:
+            - Path=/app/product/**,/hello
+          filters:
+            - RewritePath=/app/(?<segment>/?.*), /$\{segment}
+        - id: coupon_route
+          uri: lb://mall-coupon
+          predicates:
+            - Path=/app/coupon/**
+          filters:
+            - RewritePath=/app/(?<segment>/?.*), /$\{segment}
+        - id: third_route
+          uri: lb://mall-third
+          predicates:
+            - Path=/app/third/**
+          filters:
+            - RewritePath=/app/third/(?<segment>/?.*), /$\{segment}
+        - id: memeber_route
+          uri: lb://mall-memeber
+          predicates:
+            - Path=/app/member/**
+          filters:
+            - RewritePath=/app/(?<segment>/?.*), /$\{segment}
+        - id: ware_route
+          uri: lb://mall-ware
+          predicates:
+            - Path=/app/ware/**
+          filters:
+            - RewritePath=/app/(?<segment>/?.*), /$\{segment}
+        - id: app_route
+          uri: lb://renren-fast
+          predicates:
+            - Path=/app/**
+          filters:
+            - RewritePath=/app/(?<segment>/?.*), /renren-fast/$\{segment}
+        - id: msbmall_host_route1
+          uri: lb://mall-product
+          predicates:
+            - Host=mall.msb.com
+        - id: msbmall_host_route2
+          uri: lb://mall-product
+          predicates:
+            - Host=item.msb.com
+        - id: msbmall_seckill_route2
+          uri: lb://mall-seckill
+          predicates:
+            - Host=seckill.msb.com
+        - id: msbmall_host_route3
+          uri: lb://mall-search
+          predicates:
+            - Host=search.msb.com
+        - id: msbmall_host_route4
+          uri: lb://mall-auth
+          predicates:
+            - Host=auth.msb.com
+        - id: msbmall_host_route5
+          uri: lb://mall-cart
+          predicates:
+            - Host=cart.msb.com
+        - id: msbmall_host_route6
+          uri: lb://mall-order
+          predicates:
+            - Host=order.msb.com
+    sentinel:
+      transport:
+        dashboard: localhost:8080
+        client-ip: localhost
+        port: 8719
+server:
+  port: 8085

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zq.mapper.SekillMallQueryMapper">
+    <select id="querySkuInfo" resultType="com.zq.dto.SeckillSessionEntity">
+        select id,name,startTime,endTime,status,createTime from sms_seckill_session
+            <where>
+                <if test="startTime != null and startTime != ''">
+                    startTime between  startTime and endTime
+                </if>
+                <if test="endTime != null and endTime != ''">
+                    endTime between startTime and endTime
+                </if>
+            </where>
+    </select>
+    <select id="querySessionId" resultType="com.zq.dto.SeckillSkuRelationEntity">
+        select id,promotionId,promotionSessionId,skuId,seckillPrice,seckillCount,seckillLimit,seckillSort
+        from sms_seckill_sku_relation
+        <where>
+            <if test="id != null and id != ''">
+                promotionSessionId=#{id}
+            </if>
+        </where>
+    </select>
+    <select id="querySkuIdInfo" resultType="com.zq.dto.SkuInfoEntity">
+        select skuId,spuId,skuName,skuDesc,catalogId,brandId,skuDefaultImg,skuTitle,skuSubtitle,price,saleCount
+         from pms_sku_info
+         <where>
+             skuId=#{skuId}
+         </where>
+    </select>
+</mapper>

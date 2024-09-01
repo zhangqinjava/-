@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.alibaba.cloud</groupId>
+    <artifactId>spring-cloud-alibaba-starters</artifactId>
+    <version>2021.1</version>
+  </parent>
+  <groupId>com.alibaba.cloud</groupId>
+  <artifactId>spring-cloud-circuitbreaker-sentinel</artifactId>
+  <version>2021.1</version>
+  <name>Spring Cloud Circuit Breaker Sentinel</name>
+  <description>Spring Cloud Alibaba Starters</description>
+  <url>https://github.com/alibaba/spring-cloud-alibaba/spring-cloud-alibaba-starters/spring-cloud-circuitbreaker-sentinel</url>
+  <organization>
+    <name>Pivotal Software, Inc.</name>
+    <url>https://www.spring.io</url>
+  </organization>
+  <licenses>
+    <license>
+      <name>Apache License, Version 2.0</name>
+      <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <name>xiaojing</name>
+      <email>flystar32@163.com</email>
+    </developer>
+    <developer>
+      <name>Jim Fang</name>
+      <email>fangjian0423@gmail.com</email>
+      <url>https://github.com/fangjian0423</url>
+      <organization>Alibaba</organization>
+    </developer>
+    <developer>
+      <name>xiaolongzuo</name>
+      <email>150349407@qq.com</email>
+    </developer>
+    <developer>
+      <name>hengyunabc</name>
+      <email>hengyunabc@gmail.com</email>
+    </developer>
+    <developer>
+      <id>mercyblitz</id>
+      <name>Mercy Ma</name>
+      <email>mercyblitz@gmail.com</email>
+      <url>https://github.com/mercyblitz</url>
+      <organization>Alibaba</organization>
+    </developer>
+    <developer>
+      <name>yunzheng</name>
+      <email>yunzheng1228@gmail.com</email>
+    </developer>
+    <developer>
+      <id>theonefx</id>
+      <name>theonefx</name>
+      <email>chenxilzx1@gmail.com</email>
+      <url>https://github.com/theonefx</url>
+      <organization>Alibaba</organization>
+    </developer>
+  </developers>
+  <scm>
+    <connection>scm:git:git://github.com/alibaba/spring-cloud-alibaba.git/spring-cloud-alibaba-starters/spring-cloud-circuitbreaker-sentinel</connection>
+    <developerConnection>scm:git:ssh://git@github.com/alibaba/spring-cloud-alibaba.git/spring-cloud-alibaba-starters/spring-cloud-circuitbreaker-sentinel</developerConnection>
+    <url>https://github.com/alibaba/spring-cloud-alibaba/spring-cloud-alibaba-starters/spring-cloud-circuitbreaker-sentinel</url>
+  </scm>
+  <dependencies>
+    <dependency>
+      <groupId>org.springframework.cloud</groupId>
+      <artifactId>spring-cloud-commons</artifactId>
+      <version>3.0.1</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.alibaba.csp</groupId>
+      <artifactId>sentinel-core</artifactId>
+      <version>1.8.0</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.alibaba.csp</groupId>
+      <artifactId>sentinel-reactor-adapter</artifactId>
+      <version>1.8.0</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-web</artifactId>
+      <version>2.4.2</version>
+      <scope>compile</scope>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
+      <groupId>io.projectreactor</groupId>
+      <artifactId>reactor-core</artifactId>
+      <version>3.4.2</version>
+      <scope>compile</scope>
+      <optional>true</optional>
+    </dependency>
+  </dependencies>
+</project>
