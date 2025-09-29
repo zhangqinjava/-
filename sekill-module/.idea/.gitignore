@@ -6,3 +6,27 @@
 /dataSources.local.xml
 # Editor-based HTTP Client requests
 /httpRequests/
+# Java class 文件
+*.class
+
+# 构建输出
+target/
+build/
+
+# 依赖包
+*.jar
+*.war
+*.ear
+
+# 日志文件
+*.log
+
+# IDE 配置文件
+.idea/
+*.iml
+*.ipr
+*.iws
+.project
+.classpath
+.settings/
+.vscode/
